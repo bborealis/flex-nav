@@ -11,5 +11,14 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bborealis/flex-nav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bborealis/flex-nav/issues"
+  },
+  "homepage": "https://github.com/bborealis/flex-nav#readme"
 }
