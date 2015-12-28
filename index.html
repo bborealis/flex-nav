@@ -9,7 +9,12 @@
   <body>
     <div class="wrapper">
 
+      <header class="top">
+        <h1><a href="#">Header</a></h1>
+      </header>
+
     <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
       <ul>
         <li><a href="#">Item 01</a></li>
         <li><a href="#">Item 02</a></li>
@@ -32,7 +37,38 @@
       </ul>
     </nav>
 
+    <section class="hero">
+      <img src="http://lorempixel.com/1000/600/abstract" alt="" />
+    </section>
+
+    <section class="details">
+      <p>Selfies meggings kale chips raw denim pork belly paleo. Cronut single-origin coffee occupy, meditation truffaut chillwave brooklyn ethical photo booth lo-fi. Helvetica microdosing chia, deep v before they sold out pabst artisan bespoke kinfolk gastropub yuccie pork belly wayfarers.</p>
+      <p> Lumbersexual 90's organic, artisan helvetica kitsch four dollar toast. Typewriter listicle sriracha narwhal, disrupt pop-up direct trade authentic beard venmo yr umami chillwave pinterest. Crucifix helvetica plaid microdosing skateboard +1 vegan keytar portland. Selvage quinoa food truck celiac 8-bit fanny pack.</p>
+    </section>
+
+    <section class="signup">
+      <form class="signup" action="">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="Sign me up!">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; blah blah</p>
+    </footer>
+
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script>
+    $(function() {
+      $('.toggleNav').on('click', function() {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+  </script>
 
 
   </body>
