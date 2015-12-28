@@ -29,14 +29,76 @@ a {
   transition:all 0.5s;
 }
 
-a:hover {
+a:hover, .slider-nav a:hover {
   background:rgba(0,0,0,0.3);
+}
+
+/* flex container */
+.slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* first flex item */
+.slider-nav li {
+  -webkit-box-flex:2;
+  -webkit-flex:2;
+      -ms-flex:2;
+          flex:2; /* This is a flex item */
+  text-align: center;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; /*this makes it its own flex-container */
+}
+
+.slider-nav .arrow {
+  -webkit-box-flex : 1;
+  -webkit-flex : 1;
+      -ms-flex : 1;
+          flex : 1;
+}
+
+
+.slider-nav a {
+  color:white;
+  text-decoration: none;
+  font-size: 15px;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+ /*flex item*/
+.slider-nav span {
+  display : block;
+  width :100%;
+
 }
 
 .toggleNav {
   display: none;
 }
 
+.hero {
+  padding : 10px 0 0 0;
+  margin : 10px 0 0 0;
+}
 img {
   width : 100%;
 }
@@ -86,6 +148,7 @@ section, footer {
       -ms-flex:1;
           flex:1;
 }
+
 
 
 @media all and (max-width:1000px) {
